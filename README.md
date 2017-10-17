@@ -41,10 +41,11 @@ or
 
     jsa.sim.capsim --reference ref.fasta --probe probes.bam --ID someid --fmedian 500  --miseq output --illen 300 --num 20000000
 
+CapSim will output sequence reads in fastq format. Users can perform subsequenct analysis by aligning the simulated reads to the reference genome.  
 
-## Subsequent analysis
+## Off-target analysis
 
-A script file _off_target_probes.sh_ used to conduct the subsequent analysis to identify off target probes is provided in this repository. To run this script file,
+A script file _off_target_probes.sh_ used to identify off target probes is provided in this repository. To run this script file,
 
     bash off_target_probes.sh -b target_regions.bed -r ref.fasta -a cap_sim.bam -w 1000 -d 10000 -x 500 -q probes.txt -t 4 -p out
 
