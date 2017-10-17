@@ -41,6 +41,8 @@ or
 
     jsa.sim.capsim --reference ref.fasta --probe probes.bam --ID someid --fmedian 500  --miseq output --illen 300 --num 20000000
 
+Options,
+
 <pre>
       --reference=s                    Name of genome to be
                                        (REQUIRED)
